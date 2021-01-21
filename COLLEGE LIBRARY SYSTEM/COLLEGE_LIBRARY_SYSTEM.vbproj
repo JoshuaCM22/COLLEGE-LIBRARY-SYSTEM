@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{540709A8-8027-4395-9A54-5CCDC865ED6B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>COLLEGE_LIBRARY_SYSTEM.My.MyApplication</StartupObject>
+    <RootNamespace>COLLEGE_LIBRARY_SYSTEM</RootNamespace>
+    <AssemblyName>COLLEGE_LIBRARY_SYSTEM</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>COLLEGE_LIBRARY_SYSTEM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>COLLEGE_LIBRARY_SYSTEM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>LOGO ICON.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BCrypt.Net-Next, Version=4.0.2.0, Culture=neutral, PublicKeyToken=1e11be04b6288443, processorArchitecture=MSIL">
+      <HintPath>..\packages\BCrypt.Net-Next.4.0.2\lib\net452\BCrypt.Net-Next.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\Form_AddNewBook.Designer.vb">
+      <DependentUpon>Form_AddNewBook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_AddNewBook.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_AddNewCourse.Designer.vb">
+      <DependentUpon>Form_AddNewCourse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_AddNewCourse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_AddNewStudent.Designer.vb">
+      <DependentUpon>Form_AddNewStudent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_AddNewStudent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_AddNewShelf.Designer.vb">
+      <DependentUpon>Form_AddNewShelf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_AddNewShelf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_AddNewSubject.Designer.vb">
+      <DependentUpon>Form_AddNewSubject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_AddNewSubject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_BookList.Designer.vb">
+      <DependentUpon>Form_BookList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_BookList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_BookProfile.Designer.vb">
+      <DependentUpon>Form_BookProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_BookProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_BorrowBook.Designer.vb">
+      <DependentUpon>Form_BorrowBook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_BorrowBook.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_BorrowedDetails.Designer.vb">
+      <DependentUpon>Form_BorrowedDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_BorrowedDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_ChangePassword.Designer.vb">
+      <DependentUpon>Form_ChangePassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_ChangePassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_CourseList.Designer.vb">
+      <DependentUpon>Form_CourseList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_CourseList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_CourseProfile.Designer.vb">
+      <DependentUpon>Form_CourseProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_CourseProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_CreateAnotherAccount.Designer.vb">
+      <DependentUpon>Form_CreateAnotherAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_CreateAnotherAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_ForgotPassword.Designer.vb">
+      <DependentUpon>Form_ForgotPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_ForgotPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_Login.Designer.vb">
+      <DependentUpon>Form_Login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_Main.Designer.vb">
+      <DependentUpon>Form_Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_ReturnBook.Designer.vb">
+      <DependentUpon>Form_ReturnBook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_ReturnBook.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_SetANewPassword.designer.vb">
+      <DependentUpon>Form_SetANewPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_SetANewPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_ShelfList.Designer.vb">
+      <DependentUpon>Form_ShelfList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_ShelfList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_ShelfProfile.Designer.vb">
+      <DependentUpon>Form_ShelfProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_ShelfProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_SubjectList.Designer.vb">
+      <DependentUpon>Form_SubjectList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_SubjectList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_SubjectProfile.Designer.vb">
+      <DependentUpon>Form_SubjectProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_SubjectProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Objects.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Forms\Form_StudentProfile.Designer.vb">
+      <DependentUpon>Form_StudentProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_StudentProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_StudentList.Designer.vb">
+      <DependentUpon>Form_StudentList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_StudentList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\Form_AddNewBook.resx">
+      <DependentUpon>Form_AddNewBook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_AddNewCourse.resx">
+      <DependentUpon>Form_AddNewCourse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_AddNewStudent.resx">
+      <DependentUpon>Form_AddNewStudent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_AddNewShelf.resx">
+      <DependentUpon>Form_AddNewShelf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_AddNewSubject.resx">
+      <DependentUpon>Form_AddNewSubject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_BookList.resx">
+      <DependentUpon>Form_BookList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_BookProfile.resx">
+      <DependentUpon>Form_BookProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_BorrowBook.resx">
+      <DependentUpon>Form_BorrowBook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_BorrowedDetails.resx">
+      <DependentUpon>Form_BorrowedDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_ChangePassword.resx">
+      <DependentUpon>Form_ChangePassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_CourseList.resx">
+      <DependentUpon>Form_CourseList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_CourseProfile.resx">
+      <DependentUpon>Form_CourseProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_CreateAnotherAccount.resx">
+      <DependentUpon>Form_CreateAnotherAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_ForgotPassword.resx">
+      <DependentUpon>Form_ForgotPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_Login.resx">
+      <DependentUpon>Form_Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_Main.resx">
+      <DependentUpon>Form_Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_ReturnBook.resx">
+      <DependentUpon>Form_ReturnBook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_SetANewPassword.resx">
+      <DependentUpon>Form_SetANewPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_ShelfList.resx">
+      <DependentUpon>Form_ShelfList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_ShelfProfile.resx">
+      <DependentUpon>Form_ShelfProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_SubjectList.resx">
+      <DependentUpon>Form_SubjectList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_SubjectProfile.resx">
+      <DependentUpon>Form_SubjectProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_StudentProfile.resx">
+      <DependentUpon>Form_StudentProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_StudentList.resx">
+      <DependentUpon>Form_StudentList.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Connection\App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LOGO ICON.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
